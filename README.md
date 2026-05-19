@@ -4,11 +4,6 @@
 
 ---
 
-# Manual Gradient Descent
-Here is a comprehensive, highly formatted `README.md` description for your GitHub project. It translates the philosophical and clinical depth of your essay into clear, repository-ready documentation.
-
----
-
 # Manual Gradient Descent: CBT as Model Retraining
 
 > A Python simulation modeling Cognitive Behavioral Therapy (CBT) and neuroplasticity as manual gradient descent in a biological neural network.
