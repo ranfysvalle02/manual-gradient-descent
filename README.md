@@ -204,3 +204,108 @@ The architecture is universal. The distortions are just math. The neuroplasticit
 You are the optimizer. The learning rate is ready to be opened.
 
 Now run the update.
+
+----
+
+# OUTPUT of `demo.py`
+
+```
+Is this a good demo?
+
+Initializing Biological Prediction Engine...
+
+>>> PHASE 1: Hostile Environment (Training the Stale Prior)
+In this environment, Silence (1.0) always means Danger (1.0).
+
+--- CBT Session 1 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.00
+[Step 2] Evaluate Evidence: Ground truth danger is 1.0.
+         Loss (Anxiety/Felt Error): 0.5000
+         Gradient (Direction to update): -1.0000
+[Step 3] Restructuring: Applying update with α=0.5.
+         New Prior Weight: 0.5000
+
+--- CBT Session 2 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.50
+[Step 2] Evaluate Evidence: Ground truth danger is 1.0.
+         Loss (Anxiety/Felt Error): 0.1250
+         Gradient (Direction to update): -0.5000
+[Step 3] Restructuring: Applying update with α=0.5.
+         New Prior Weight: 0.7500
+
+--- CBT Session 3 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.75
+[Step 2] Evaluate Evidence: Ground truth danger is 1.0.
+         Loss (Anxiety/Felt Error): 0.0312
+         Gradient (Direction to update): -0.2500
+[Step 3] Restructuring: Applying update with α=0.5.
+         New Prior Weight: 0.8750
+
+--- CBT Session 4 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.88
+[Step 2] Evaluate Evidence: Ground truth danger is 1.0.
+         Loss (Anxiety/Felt Error): 0.0078
+         Gradient (Direction to update): -0.1250
+[Step 3] Restructuring: Applying update with α=0.5.
+         New Prior Weight: 0.9375
+
+[!] Model converged. Stale prior weight crystallized at: 0.94
+[!] The model now confidently equates silence with danger to minimize loss.
+
+>>> PHASE 2: Out of Distribution (The Quiet Manager)
+Manager goes quiet. Automatic Threat Prediction: 0.94
+Result: Catastrophizing. The brain is executing flawlessly on stale priors.
+
+>>> PHASE 3: Venting Therapy (α = 0.01)
+Neuromodulators are quiet. The patient is comfortable. Insight is gained, but weights don't move.
+
+--- CBT Session 1 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.94
+[Step 2] Evaluate Evidence: Ground truth danger is 0.0.
+         Loss (Anxiety/Felt Error): 0.4395
+         Gradient (Direction to update): 0.9375
+[Step 3] Restructuring: Applying update with α=0.01.
+         New Prior Weight: 0.9281
+Result: The semantic model updated, but the amygdala didn't get the memo.
+
+>>> PHASE 4: Manual Gradient Descent (α = 0.3)
+Norepinephrine and Acetylcholine released. Plasticity window is artificially opened.
+
+--- CBT Session 1 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.93
+[Step 2] Evaluate Evidence: Ground truth danger is 0.0.
+         Loss (Anxiety/Felt Error): 0.4307
+         Gradient (Direction to update): 0.9281
+[Step 3] Restructuring: Applying update with α=0.3.
+         New Prior Weight: 0.6497
+
+--- CBT Session 2 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.65
+[Step 2] Evaluate Evidence: Ground truth danger is 0.0.
+         Loss (Anxiety/Felt Error): 0.2110
+         Gradient (Direction to update): 0.6497
+[Step 3] Restructuring: Applying update with α=0.3.
+         New Prior Weight: 0.4548
+
+--- CBT Session 3 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.45
+[Step 2] Evaluate Evidence: Ground truth danger is 0.0.
+         Loss (Anxiety/Felt Error): 0.1034
+         Gradient (Direction to update): 0.4548
+[Step 3] Restructuring: Applying update with α=0.3.
+         New Prior Weight: 0.3183
+
+--- CBT Session 4 ---
+[Step 1] Forward Pass: Context is 1.0. Predicted threat level: 0.32
+[Step 2] Evaluate Evidence: Ground truth danger is 0.0.
+         Loss (Anxiety/Felt Error): 0.0507
+         Gradient (Direction to update): 0.3183
+[Step 3] Restructuring: Applying update with α=0.3.
+         New Prior Weight: 0.2228
+
+>>> PHASE 5: Regularization (Testing in the Wild)
+Testing the updated model in a new, noisy environment (e.g., family dinner).
+Input Context: 0.8
+Generalized Threat Prediction: 0.1783
+Result: Success. The new weights survived a real test. The model has generalized.
+```
