@@ -32,7 +32,7 @@ Where:
 
 ---
 
-## ⚙️ How the Simulation Works
+## How the Simulation Works
 
 The `demo.py` script walks through a five-phase lifecycle of a biological prediction engine, tracking a single synaptic weight (the association between "silence" and "danger").
 
@@ -58,7 +58,7 @@ The freshly updated weights are tested in a slightly different environment (e.g.
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Clone the repository and run the simulation to see the biological prediction engine output its calculations in real-time.
 
@@ -74,7 +74,7 @@ python demo.py
 
 ```
 
-## 📖 Read the Full Theory BELOW
+## Read the Full Theory BELOW
 
 ----
 
